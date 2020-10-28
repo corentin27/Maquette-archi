@@ -1,0 +1,212 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+    box-shadow: 0px 0.5px 5px 0.5px;
+}
+
+ul,
+#logo {
+    margin: .5rem;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 5px;
+}
+
+.gras {
+    font-weight: 600;
+}
+
+.fondDark {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+}
+
+#imgHeader {
+    background-image: url("img/architect.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: normal;
+    color: white;
+    /*     transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in; */
+    /* ceci est l'abbréviation ci-dessus */
+    transition: all 1s ease-out;
+    /*
+    background-color: rgba(0, 0, 0, 0.8);
+    -moz-transform: translate(50px, 0px);
+    -webkit-transform: translate(50px, 0px);
+    -o-transform: translate(50px, 0px);
+    -ms-transform: translate(50px, 0px);
+    transform: translate(50px, 0px); */
+}
+
+h1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    -moz-transform: translate(50px, 0px);
+    -webkit-transform: translate(50px, 0px);
+    -o-transform: translate(50px, 0px);
+    -ms-transform: translate(50px, 0px);
+    transform: translate(50px, 0px);
+}
+
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+/* section projects About*/
+#imgCards,
+#archiCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+figure,
+#archiCards div {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:576px) {
+    figure,#archiCards div {
+        width: 50%;
+    }
+}
+@media screen and (min-width:992px) {
+    figure,#archiCards div {
+        width: 25%;
+    }
+}
+
+#archiCards div {
+    height: 540px;
+    padding: 16px 10px;
+    position: relative;
+}
+
+figure img,
+#archiCards img,
+#archiCards button {
+    width: 100%;
+}
+
+
+figcaption,
+form button,
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#archiCards button {
+    background-color: lightgrey;
+    font-weight: 600;
+    border: none;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    font-size: .7rem;
+    color: rgb(116, 116, 116);
+}
+
+/* section formation */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 0.1rem;
+    margin: .3rem;
+
+}
+
+form button {
+    margin: .3rem;
+    padding: .5rem;
+    border: none;
+    width: 150px;
+}
+
+.map {
+    background-image: url("img/map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 1rem;
+
+}
+
+footer {
+    padding-top: 1rem;
+    height: 75px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* la position relative est modifier part rapports à ça position de base  */
